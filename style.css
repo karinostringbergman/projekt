@@ -1,0 +1,130 @@
+@import "variabler.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: var(--textmork);
+}
+
+nav {
+    background-color: var(--forsta);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+}
+
+.nav-item{
+  display:flex;
+}
+
+.nav-item img{
+ height:2rem;
+ margin: 0.25rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav-item a:hover {
+    color: var(--textljus);
+}
+
+main{
+    max-width: 48rem;
+    margin: auto;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(21, 4.75%);
+    grid-template-rows: repeat(13, 2rem);
+}
+
+.grid-container > div {
+    margin: 0.25rem;
+  }
+
+.item0{
+    background-color: var(--andre);
+    grid-column: 16;
+    grid-row: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    background-color: var(--tredje);
+    grid-column: 16;
+    grid-row: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    background-color: var(--fjarde);
+    grid-column: 14 / span 2;
+    grid-row: 9 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.item3{
+    background-color: var(--femte);
+    grid-column: 14 / span 3;
+    grid-row: 11 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.item5{
+    background-color: var(--forsta);
+    grid-column: 17 / span 5;
+    grid-row: 9 / span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.item8{
+    background-color: var(--andre);
+    grid-column: 14 / span 8;
+    grid-row: 1 / span 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+.item13{
+    background-color: var(--tredje);
+    grid-column: 1 / span 13;
+    grid-row: 1 / span 13;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0.25rem 0;
+  }
+
+footer {
+    height: 2rem;
+    background-color: var(--femte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

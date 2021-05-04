@@ -1,0 +1,76 @@
+@import "variabler.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: var(--textmork);
+}
+
+nav {
+    background-color: var(--forsta);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+}
+
+.nav-item{
+  display:flex;
+}
+
+.nav-item img{
+ height:2rem;
+ margin: 0.25rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav-item a:hover {
+    color: var(--textljus);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main table {
+    border-spacing: 0.25rem;
+  }
+  
+main table tr:nth-child(odd) {
+    background-color: var(--tredje);
+  }
+
+main table tr:nth-child(even) {
+    background-color: var(--fjarde);
+  }
+
+main table tr th {
+    background-color: var(--andre);
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+
+  main table tr td {
+    padding: 0 0.5rem;
+  }
+
+footer {
+    height: 2rem;
+    background-color: var(--femte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
