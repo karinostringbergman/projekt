@@ -63,6 +63,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .item1{
     background-color: var(--tredje);
     grid-column: 16;
@@ -107,6 +108,7 @@ main{
     align-items: center;
     font-size: 8rem;
 }
+
 .item13{
     background-color: var(--tredje);
     grid-column: 1 / span 13;
@@ -116,6 +118,60 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 660px) {
+    .item0{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .item1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .item2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .item3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .item5{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(13, 2rem);
+    }
+
+    .item8 {
+      display: none;
+    }
+
+    .item13{
+        background-color: var(--tredje);
+        grid-column: 1;
+        grid-row: 1 / span 13;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 button {
     margin: 0.25rem 0;
