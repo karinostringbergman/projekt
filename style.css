@@ -45,13 +45,13 @@ main{
     margin: auto;
 }
 
-.grid-container{
+.main-container{
     display:grid;
-    grid-template-columns: repeat(21, 4.75%);
+    grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(13, 2rem);
 }
 
-.grid-container > div {
+.main-container > div {
     margin: 0.25rem;
   }
 
@@ -119,46 +119,47 @@ main{
     align-items: center;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 760px) {
     .item0{
         display: none;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     .item1{
         display: none;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 680px) {
     .item2{
         display: none;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .item3{
         display: none;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     .item5{
         display: none;
     }
 }
-
 @media screen and (max-width: 560px) {
-
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(13, 2rem);
+    .item8{
+        display: none;
     }
+}
 
-    .item8 {
-      display: none;
+@media screen and (max-width: 520px) {
+
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(13, 2rem);
     }
 
     .item13{
@@ -172,6 +173,18 @@ main{
     }
 }
 
+@media screen and (max-width: 450px) {
+
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(13, 1rem);
+    }
+}
+
+.form-container{
+    margin: 0.25rem;
+  }
 
 button {
     margin: 0.25rem 0;
